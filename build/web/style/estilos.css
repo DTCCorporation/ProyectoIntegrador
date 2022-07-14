@@ -1,13 +1,18 @@
 
 .colorFondo
 {
-    background-color: #5bb3ff; 
+    background-color: #5bb3ff;
 }
 
 .title
 {
-    background-color: #cce6ff;
-    background-position: center;
-    border-radius: 10px 0px 10px 0px;
-    
+    color:white;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px blue;
+    text-shadow: 2px 2px 5px darkblue;
+}
+
+.ingresar:hover
+{
+    box-shadow: 5px 5px 5px lightblue;
 }
