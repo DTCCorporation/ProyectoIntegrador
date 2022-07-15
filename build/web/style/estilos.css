@@ -3,7 +3,7 @@
 {
     background-image: url(../img/fondo_login.gif);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 .title
