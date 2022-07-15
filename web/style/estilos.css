@@ -2,7 +2,7 @@
 .fondoLogin
 {
     background-image: url(../img/loginFondo.gif);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -33,7 +33,7 @@
 {
     background-image: url(../img/fondo_Menu.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 .fondoNav
