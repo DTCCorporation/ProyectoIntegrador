@@ -2,7 +2,7 @@
 .fondoLogin
 {
     background-image: url(../img/loginFondo.gif);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
