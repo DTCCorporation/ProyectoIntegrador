@@ -16,12 +16,12 @@
 
 .ingresar:hover
 {
-    box-shadow: 5px 5px 5px lightblue;
+    box-shadow: 5px 5px 5px #97f4ff;
 }
 
-.fondocardlogin
+.fondoCardLogin
 {
-    background-color: #438996;
+    background-color: black;
 }
 
 .fondoCardBodyLogin
