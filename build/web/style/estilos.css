@@ -28,3 +28,10 @@
 {
     background-color: #c3dbdf;
 }
+
+.fondoMenu
+{
+    background-image: url(../img/fondo_Menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
