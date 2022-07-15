@@ -58,5 +58,17 @@
 {    
     background-color: rgba( 193, 222, 230,0.350 );
     border-radius: 10px;
-    color: white;
+    color: white;    
+}
+
+.migas:link,.migas:visited,.migas:active
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.migas:hover
+{
+    color: rgb(193, 222, 230);
+    text-decoration: underline;
 }
