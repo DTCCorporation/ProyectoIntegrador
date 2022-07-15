@@ -38,7 +38,7 @@
 
 .fondoNav
 {
-    background-color: rgba(67, 137, 150, 1);
+    background-color: rgba(1, 35, 42,0.754);
 }
 
 .navM
@@ -46,7 +46,10 @@
     height: 50px;
 
 }
-
+.optica_menu_item
+{
+    color: #c1dee6;
+}
 .optica_menu_item:hover
 {
     color: white;
@@ -54,6 +57,10 @@
     border-radius: 10px;
 }
 
+.producto_item
+{
+    color: #c1dee6;
+}
 .producto_item:hover
 {    
     background-color: rgba( 193, 222, 230,0.350 );
@@ -65,10 +72,14 @@
 {
     color: #000;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .migas:hover
 {
-    color: rgb(193, 222, 230);
+    color: white;
     text-decoration: underline;
+    font-weight: bold;
+    font-size: 12px;
 }
