@@ -11,12 +11,18 @@
     color:white;
     font-weight: bold;
     -webkit-text-stroke: 0.9px black;
-    text-shadow: 0 3px 5px black;
+    text-shadow: 0 3px 5px black;    
 }
 
+.ingresar
+{
+    color: white;
+    background-color: rgb(4, 39, 46);
+}
 .ingresar:hover
 {
-    box-shadow: 5px 5px 5px #97f4ff;
+    color: #c3dbdf;
+    box-shadow: 5px 5px 5px lightblue;
 }
 
 .fondoCardLogin
@@ -62,10 +68,10 @@
     color: #c1dee6;
 }
 .producto_item:hover
-{    
+{
     background-color: rgba( 193, 222, 230,0.350 );
     border-radius: 10px;
-    color: white;    
+    color: white;
 }
 
 .migas:link,.migas:visited,.migas:active
