@@ -1,7 +1,8 @@
 
-.colorFondo
+.fondoLogin
 {
-    background-color: white;
+    background-image: url(../img/pattern2.jpg);
+    background-size: 100%;
 }
 
 .title
