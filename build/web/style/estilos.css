@@ -1,7 +1,7 @@
 
 .fondoLogin
 {
-    background-image: url(../img/pattern2.jpg);
+    background-image: url(../img/);
     background-size: 100%;
 }
 
@@ -10,7 +10,7 @@
     color:white;
     font-weight: bold;
     -webkit-text-stroke: 0.9px black;
-    text-shadow: 0 5px 10px darkblue;
+    text-shadow: 0 3px 5px black;
 }
 
 .ingresar:hover
