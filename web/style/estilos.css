@@ -1,8 +1,9 @@
 
 .fondoLogin
 {
-    background-image: url(../img/);
-    background-size: 100%;
+    background-image: url(../img/fondoLogin.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title
@@ -16,4 +17,14 @@
 .ingresar:hover
 {
     box-shadow: 5px 5px 5px lightblue;
+}
+
+.fondocardlogin
+{
+    background-color: #438996;
+}
+
+.fondoCardBodyLogin
+{
+    background-color: #c3dbdf;
 }
