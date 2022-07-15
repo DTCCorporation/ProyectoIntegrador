@@ -40,3 +40,23 @@
 {
     background-color: rgba(3, 23, 43, 0.74);
 }
+
+.navM
+{
+    height: 50px;
+
+}
+
+.optica_menu_item:hover
+{
+    color: white;
+    background-color: rgba( 193, 222, 230,0.350 );
+    border-radius: 10px;
+}
+
+.producto_item:hover
+{    
+    background-color: rgba( 193, 222, 230,0.350 );
+    border-radius: 10px;
+    color: white;
+}
