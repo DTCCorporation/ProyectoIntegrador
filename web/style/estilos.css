@@ -1,15 +1,15 @@
 
 .colorFondo
 {
-    background-color: #5bb3ff;
+    background-color: white;
 }
 
 .title
 {
     color:white;
     font-weight: bold;
-    -webkit-text-stroke: 0.5px blue;
-    text-shadow: 2px 2px 5px darkblue;
+    -webkit-text-stroke: 0.9px black;
+    text-shadow: 0 5px 10px darkblue;
 }
 
 .ingresar:hover
