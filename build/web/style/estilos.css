@@ -52,7 +52,7 @@
     height: 50px;
 
 }
-.optica_menu_item
+.optica_menu_item,.optica_menu_item:link,.optica_menu_item:visited,.optica_menu_item:active
 {
     color: #c1dee6;
 }
@@ -68,7 +68,7 @@
     background-color: rgba( 193, 222, 230,0.9 );
 }    
 
-.producto_item
+.producto_item,.producto_item:link,.producto_item:visited,.producto_item:active
 {
     color: #c1dee6;
 }
