@@ -63,6 +63,11 @@
     border-radius: 10px;
 }
 
+.producto_item_menu
+{
+    background-color: rgba( 193, 222, 230,0.9 );
+}    
+
 .producto_item
 {
     color: #c1dee6;
