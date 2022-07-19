@@ -1,7 +1,7 @@
 
 header
-{
-    position: fixed; 
+{     
+    background-color: rgba(1, 35, 42,0.754);
     width: 100%;
     top: 0;
     left: 0;
@@ -50,13 +50,8 @@ header
     background-repeat: repeat-y;
 }
 
-.fondoNav
-{
-    background-color: rgba(1, 35, 42,0.754);
-}
-
 .navM
-{
+{    
     height: 50px;
     display: flex;
     justify-content: space-between;           
@@ -112,4 +107,13 @@ header
     font-size: 30px;
     line-height: 60px;
     display: none;
+}
+
+@media(max-width:768px)
+{
+    .fondoMenu
+    {
+        background-color: #c1dee6;
+        background-image: none;
+    }
 }
