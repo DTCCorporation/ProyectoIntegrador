@@ -1,4 +1,12 @@
 
+header
+{
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .fondoLogin
 {
     background-image: url(../img/fondo_login.gif);
@@ -50,7 +58,8 @@
 .navM
 {
     height: 50px;
-
+    display: flex;
+    justify-content: space-between;           
 }
 .optica_menu_item,.optica_menu_item:link,.optica_menu_item:visited,.optica_menu_item:active
 {
@@ -93,4 +102,14 @@
     text-decoration: underline;
     font-weight: bold;
     font-size: 12px;
+}
+
+.hamburguesa
+{
+    color: #c1dee6;
+    background: none;
+    border: none;
+    font-size: 30px;
+    line-height: 60px;
+    display: none;
 }

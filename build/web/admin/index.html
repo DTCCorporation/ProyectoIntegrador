@@ -14,64 +14,69 @@
     </head>
     <body class="fondoMenu img-fluid">
         <!-- Navbar -->
-        <nav class="navbar fondoNav navM pt-sm-0">
-            <div class="container-fluid" style="margin-top: 8px;">
-                <div class="dropdown">
-                    <a id="dropDownMenuProductos" class="navbar-brand dropdown-toggle optica_menu_item" href="#" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../img/logo_óptica.png" width="40" height="30" alt="logo_óptica" class="d-inline-block align-text-top"/>
-                        &Oacute;ptica Qualite
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropDownMenuProductos">
-                        <li><a class="dropdown-item" href="#" onclick="logout();">Cerrar Sesi&oacute;n</a></li>                       
-                    </ul>
-                </div>
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Empleados
-                </a>
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Clientes
-                </a>
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Ex&aacute;men de la vista
-                </a>
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Presupuestos
-                </a>                
-                <div class="dropdown">
-                    <a id="dropDownMenuProductos" class="nav-link dropdown-toggle producto_item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <header>
+            <nav class="navbar navbar-collapse fondoNav navM pt-sm-0">
+                <div class="container-fluid">
+                    <div class="dropdown">
+                        <a id="dropDownMenuProductos" class="navbar-brand dropdown-toggle optica_menu_item" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../img/logo_óptica.png" width="40" height="30" alt="logo_óptica" class="d-inline-block align-text-top"/>
+                            &Oacute;ptica Qualite
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropDownMenuProductos">
+                            <li><a class="dropdown-item" href="#" onclick="logout();">Cerrar Sesi&oacute;n</a></li>                       
+                        </ul>
+                    </div>
+                    <button class="hamburguesa">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a class="nav-link optica_menu_item" href="#">
                         <img src="src" alt=""/>
-                        Productos
+                        Empleados
                     </a>
-                    <ul class="dropdown-menu producto_item_menu" aria-labelledby="dropDownMenuProductos">
-                        <li><a class="dropdown-item" href="#" onclick="cargarModuloAccesorio();">Accesorios</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="cargarModuloArmazon();">Armazones</a></li>
-                        <li><a class="dropdown-item" href="#">Lentes de Contacto</a></li>
-                        <li><a class="dropdown-item" href="#">Soluciones</a></li>
-                    </ul>
-                </div>
+                    <a class="nav-link optica_menu_item" href="#">
+                        <img src="src" alt=""/>
+                        Clientes
+                    </a>
+                    <a class="nav-link optica_menu_item" href="#">
+                        <img src="src" alt=""/>
+                        Ex&aacute;men de la vista
+                    </a>
+                    <a class="nav-link optica_menu_item" href="#">
+                        <img src="src" alt=""/>
+                        Presupuestos
+                    </a>                
+                    <div class="dropdown">
+                        <a id="dropDownMenuProductos" class="nav-link dropdown-toggle producto_item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="src" alt=""/>
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu producto_item_menu" aria-labelledby="dropDownMenuProductos">
+                            <li><a class="dropdown-item" href="#" onclick="cargarModuloAccesorio();">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="cargarModuloArmazon();">Armazones</a></li>
+                            <li><a class="dropdown-item" href="#">Lentes de Contacto</a></li>
+                            <li><a class="dropdown-item" href="#">Soluciones</a></li>
+                        </ul>
+                    </div>
 
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Ventas
-                </a> 
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Compras
-                </a> 
-                <a class="nav-link optica_menu_item" href="#">
-                    <img src="src" alt=""/>
-                    Reportes
-                </a> 
-            </div>
-        </nav>
+                    <a class="nav-link optica_menu_item" href="#">
+                        <img src="src" alt=""/>
+                        Ventas
+                    </a> 
+                    <a class="nav-link optica_menu_item" href="#">
+                        <img src="src" alt=""/>
+                        Compras
+                    </a> 
+                    <a class="nav-link optica_menu_item" href="#">
+                        <img src="src" alt=""/>
+                        Reportes
+                    </a> 
+                </div>
+            </nav>
+        </header>
 
         <div id="contenedor_principal" class="p-2">
-            
+
         </div>
 
 
