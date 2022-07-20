@@ -115,11 +115,3 @@ header
     background-color: #04272E;    
 }
 
-@media(max-width:768px)
-{
-    .fondoMenu
-    {
-        background-color: #c1dee6;
-        background-image: none;
-    }
-}
