@@ -109,6 +109,11 @@ header
     display: none;
 }
 
+.card-hform
+{
+    background-color: #04272E;    
+}
+
 @media(max-width:768px)
 {
     .fondoMenu
