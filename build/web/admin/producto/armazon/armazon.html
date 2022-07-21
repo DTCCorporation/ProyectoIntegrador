@@ -2,7 +2,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item active ms-4 text-dark" aria-current="page">
             <a class="migas" href="index.html">Home /</a>
-             <a class="migas" href="#">Productos /</a>
+            <a class="migas" href="#">Productos /</a>
             <a class="migas" href="#" onclick="cargarModuloArmazon();">Armaz&oacute;n /</a>
         </li>
     </ol>
@@ -14,7 +14,7 @@
                 <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
                 <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n de Armazones</span>
                 <span style="margin-left: 16px;">
-                    <button class="btn btn-sm btn-outline-success my-2" >
+                    <button class="btn btn-sm btn-outline-light my-2" >
                         <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
                     </button>
                 </span>
@@ -25,7 +25,7 @@
     </div>
 </div>
 <div class="row mt-2">
-    <div id="divDetalle" class="col-6">
+    <div id="divDetalle" class="col-12 col-md-6 col-lg-5">
         <div class="card">
             <div class="card-header card-hform">
                 Detalles del Armazon
@@ -34,13 +34,13 @@
                     </a>
                 </span>
             </div>
-            <div class="card-body" style="background-color: #438996;">
+            <div class="card-body">
                 <div class="form">
                     <div class="row">
                         <div class="col">
                             <div class="row">
                                 <div class="col">
-                                    <label for="txtCodigo" class="form-label text-white">C&oacute;digo del Producto</label>
+                                    <label for="txtCodigo" class="form-label">C&oacute;digo del Producto</label>
                                     <div class="row">
                                         <div class="col-6">
                                             <input id="txtCodigoAccesorio" type="text" class="form-control" readonly/>
@@ -73,6 +73,46 @@
 
                         </div>
                     </div>
+                    <div class="row mt-1" style="padding-top: 3px;">
+                        <div class="col-4">
+                            <div class="form-floating">
+                                <input id="txtModelo" type="text" class="form-control" placeholder="Modelo">
+                                <label for="txtModelo">Modelo:</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-floating">
+                                <input id="colorAccesorio" type="color" class="form-control" placeholder="Color">
+                                <label for="colorAccesorio">Color:</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-floating">
+                                <textarea id="txtDescripcion" class="form-control" placeholder="Descripci&oacute;n:"></textarea>
+                                <label for="txtDescripcion">Descripci&oacute;n</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2" style="padding-top: 3px;">
+                        <div class="col-6">                                                                                     
+                            <label for="imgAcc" class="form-label">Imagen:</label> 
+                            <input class="form-control" type="file" id="imgAcc">                                                       
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input id="txtDimensiones" type="text" class="form-control" placeholder="Dimensiones">
+                                <label for="txtDimensiones">Dimensiones:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input id="txtCodigoBarras" type="text" class="form-control" placeholder="Código de Barras">
+                                <label for="txtCodigoBarras">C&oacute;digo de Barras:</label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
                         <div class="col-4">
                             <div class="form-floating">
@@ -102,17 +142,21 @@
             </div>
         </div>
     </div>
-    <div id="divCatalogo" class="col-6">
+    <div id="divCatalogo" class="col-12 col-md-6 col-lg-7 mt-2 mt-md-2 mt-lg-0">
         <div class="card">
             <div class="card-header card-hform">
                 Listado de Armazones
             </div>
             <div class="card-body">
-                <table id="tblAccesorios" class="table table-hover">
+                <table id="tblAccesorios" class="table table-hover table-responsive card-group">
                     <thead>
                         <tr>
                             <th>Nombre</th>
                             <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Color</th>
+                            <th>Descripci&oacute;n</th>
+                            <th>C&oacute;digo Barras</th>
                             <th>Precio Compra</th>
                             <th>Precio Venta</th>
                             <th>Existencias</th>
