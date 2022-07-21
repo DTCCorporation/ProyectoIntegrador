@@ -19,3 +19,14 @@ function cargarModuloArmazon()
                     document.getElementById('contenedor_principal').innerHTML=datos;
                    });
 }
+
+function cargarModuloExamenVista()
+{
+    fetch('examen_vista/examen_vista.html')
+    .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
