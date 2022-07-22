@@ -2,7 +2,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item active ms-4 text-dark" aria-current="page">
             <a class="migas" href="index.html">Home /</a>
-            <a class="migas" href="#" onclick="cargarModuloCliente();">Cliente /</a>
+            <a class="migas" href="#" onclick="cargarModuloEmpleado();">Empleados /</a>
         </li>
     </ol>
 </nav>
@@ -12,7 +12,7 @@
         <div class="card-header bg-gradient" style="background-color: #04272E;padding-top: 0px; padding-bottom: 0px;">
             <span>
                 <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
-                <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n Cliente</span>
+                <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n Empleado</span>
                 <span style="margin-left: 16px;">
                     <button class="btn btn-sm btn-outline-light my-2" >
                         <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
@@ -31,7 +31,7 @@
     <div id="divDetalle" class="col-6">
         <div class="card">
             <div class="card-header text-white card-hform ">
-                Detalles del Cliente                
+                Detalles del Empleado               
             </div>
             <div class="card-body">
                 <div class="form">
@@ -39,22 +39,22 @@
                         <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
                             <div class="col-12">                            
                                 <div class="form-floating">
-                                    <input id="txtNombreC" type="text" class="form-control" placeholder="Nombre del Cliente"/>
-                                    <label for="txtNombreC">Nombre:</label>
+                                    <input id="txtNombreE" type="text" class="form-control" placeholder="Nombre del Empleado"/>
+                                    <label for="txtNombreE">Nombre:</label>
                                 </div>                        
                             </div>
                         </div>
                         <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
                             <div class="col-6">                            
                                 <div class="form-floating">
-                                    <input id="txtApellidoPaternoC" type="text" class="form-control" placeholder="Apellido Paterno del Cliente"/>
-                                    <label for="txtApellidoPaternoC">Apellido Paterno:</label>
+                                    <input id="txtApellidoPaternoE" type="text" class="form-control" placeholder="Apellido Paterno del Empleado"/>
+                                    <label for="txtApellidoPaternoE">Apellido Paterno:</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-floating">
-                                    <input id="txtApellidoMaternoC" type="text" class="form-control" placeholder="Apellido Materno del Cliente"/>
-                                    <label for="txtApellidoMaternoC">Apellido Materno:</label>
+                                    <input id="txtApellidoMaternoE" type="text" class="form-control" placeholder="Apellido Materno del Empleado"/>
+                                    <label for="txtApellidoMaternoE">Apellido Materno:</label>
                                 </div>
                             </div>
                         </div> 
@@ -82,13 +82,13 @@
                         <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
                             <div class="col-6">                            
                                 <div class="form-floating">
-                                    <input id="txtNumeroUnicoCliente" type="text" class="form-control" placeholder="Numero Unico"/>
-                                    <label for="txtNumeroUnicoCliente">N&uacute;mero &Uacute;nico Cliente:</label>
+                                    <input id="txtNumeroUnicoEmpleado" type="text" class="form-control" placeholder="Numero Unico"/>
+                                    <label for="txtNumeroUnicoEmpleado">N&uacute;mero &Uacute;nico Empleado:</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-floating">
-                                    <input id="txtRFC" type="text" class="form-control" placeholder="RFC del Cliente"/>
+                                    <input id="txtRFC" type="text" class="form-control" placeholder="RFC del Empleado"/>
                                     <label for="txtRFC">RFC:</label>
                                 </div>
                             </div>
@@ -115,6 +115,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6">                            
+                                <div class="form-floating">
+                                    <input id="txtUsuario" type="text" class="form-control" placeholder="Usuario"/>
+                                    <label for="txtUsuario">Usuario:</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtContraseña" type="text" class="form-control" placeholder="Contraseña"/>
+                                    <label for="txtContraseña">Contraseña:</label>
+                                </div>
+                            </div>
+                        </div>
                         <div class="my-3 text-center">
                             <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
                             <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
@@ -128,14 +142,14 @@
     <div id="divCatalogo" class="col-6">
         <div class="card">
             <div class="card-header card-hform">
-                Listado de Clientes
+                Listado de Empleados
             </div>
             <div class="card-body">
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="estatus">
                     <label class="form-check-label" for="estatus">Inactivo/Activo</label>
                 </div>
-                <table id="tblClientes" class="table table-hover table-responsive card-group">
+                <table id="tblEmpleados" class="table table-hover table-responsive card-group">
                     <thead>
                         <tr>
                             <th>Nombre</th>
@@ -148,9 +162,11 @@
                             <th>Tel&eacute;fono Casa</th>
                             <th>Tel&eacute;fono M&oacute;vil</th>
                             <th>Correo Electronico</th>
+                            <th>Usuario</th>
+                            <th>Contraseña</th>
                         </tr>
                     </thead>
-                    <tbody id="tbodyClientes"></tbody>
+                    <tbody id="tbodyEmpleado"></tbody>
                 </table>
             </div>
         </div>

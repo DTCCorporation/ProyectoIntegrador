@@ -41,3 +41,14 @@ function cargarModuloCliente()
                     document.getElementById('contenedor_principal').innerHTML=datos;
                    });
 }
+
+function cargarModuloEmpleado()
+{
+    fetch('empleado/empleados.html')
+    .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
