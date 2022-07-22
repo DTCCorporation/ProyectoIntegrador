@@ -1,0 +1,114 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active ms-4 text-dark" aria-current="page">
+            <a class="migas" href="index.html">Home /</a>
+            <a class="migas" href="#" onclick="cargarModuloVenta();">Ventas /</a>
+        </li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col">
+        <div class="card-header bg-gradient" style="background-color: #04272E;padding-top: 0px; padding-bottom: 0px;">
+            <span>
+                <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
+                <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n Venta</span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" >
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
+                    </button>
+                </span>
+            </span>
+            <span class="float-end"><a class="optica_closable_action" href="#">                    
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div id="divDetalle" class="col-6">
+        <div class="card">
+            <div class="card-header text-white card-hform ">
+                Detalles de la Venta             
+            </div>
+            <div class="card-body">
+                <div class="form">
+                    <div class="row">                        
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtClaveUnicaVenta" type="text" class="form-control" placeholder="Clave Unica"/>
+                                    <label for="txtClaveUnicaVenta">Clave &Uacute;nica Venta:</label>
+                                </div>                        
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="dateFecha" type="datetime-local" class="form-control" placeholder="Fecha de Venta">
+                                    <label for="dateFecha" >Fecha de la Venta:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtNumeroUnicoCliente" type="text" class="form-control" placeholder="Numero Unico"/>
+                                    <label for="txtNumeroUnicoCliente">N&uacute;mero &Uacute;nico Cliente:</label>
+                                </div>                       
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtNumeroUnicoEmpleado" type="text" class="form-control" placeholder="Numero Unico"/>
+                                    <label for="txtNumeroUnicoEmpleado">N&uacute;mero &Uacute;nico Empleado:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
+                            <div class="col-12">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtDetalleVenta" type="text" class="form-control" placeholder="Detalle Venta"/>
+                                    <label for="txtDetalleVenta">Detalle de la Venta:</label>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
+                            <div class="col-12">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtDescuentoTotal" type="text" class="form-control" placeholder="Descuento Total"/>
+                                    <label for="txtDescuentoTotal">Descuento Total:</label>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="my-3 text-center">
+                            <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
+                            <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
+                            <button class="btn btn-success"><i class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div id="divCatalogo" class="col-6">
+        <div class="card">
+            <div class="card-header card-hform">
+                Listado de Ventas
+            </div>
+            <div class="card-body">                
+                <table id="tblVenta" class="table table-hover table-responsive card-group">
+                    <thead>
+                        <tr>
+                            <th>Clave &Uacute;nica</th>
+                            <th>Fecha</th>
+                            <th>Nombre del Cliente</th>
+                            <th>Valor Total de la Venta</th>
+                            <th>Total Abonado</th>
+                            <th>Adeudo Actual</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyVenta"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

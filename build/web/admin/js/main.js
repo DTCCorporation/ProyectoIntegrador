@@ -52,3 +52,14 @@ function cargarModuloEmpleado()
                     document.getElementById('contenedor_principal').innerHTML=datos;
                    });
 }
+
+function cargarModuloVenta()
+{
+    fetch('venta/venta.html')
+    .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
