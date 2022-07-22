@@ -30,3 +30,14 @@ function cargarModuloExamenVista()
                     document.getElementById('contenedor_principal').innerHTML=datos;
                    });
 }
+
+function cargarModuloCliente()
+{
+    fetch('cliente/cliente.html')
+    .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
