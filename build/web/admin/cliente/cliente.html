@@ -35,49 +35,95 @@
             </div>
             <div class="card-body">
                 <div class="form">
-                    <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
-                        <div class="col-6">                            
-                            <div class="form-floating">
-                                <input id="txtNombre" type="text" class="form-control" placeholder="Nombre del Acesorio"/>
-                                <label for="txtNombre">Nombre:</label>
+                    <div class="row">
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
+                            <div class="col-12">                            
+                                <div class="form-floating">
+                                    <input id="txtNombreC" type="text" class="form-control" placeholder="Nombre del Cliente"/>
+                                    <label for="txtNombreC">Nombre:</label>
+                                </div>                        
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input id="txtMarca" type="text" class="form-control" placeholder="Marca del Accesorio"/>
-                                <label for="txtMarca">Marca:</label>
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6">                            
+                                <div class="form-floating">
+                                    <input id="txtApellidoPaternoC" type="text" class="form-control" placeholder="Apellido Paterno del Cliente"/>
+                                    <label for="txtApellidoPaternoC">Apellido Paterno:</label>
+                                </div>
                             </div>
-
-                        </div>
-                    </div>
-                    <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
-                        <div class="col-4">
-                            <div class="form-floating">
-                                <input id="txtPrecioCompra" type="text" class="form-control" placeholder="Precio de Compra del Accesorio"/>
-                                <label for="txtPrecioCompra" >Precio de Compra:</label>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtApellidoMaternoC" type="text" class="form-control" placeholder="Apellido Materno del Cliente"/>
+                                    <label for="txtApellidoMaternoC">Apellido Materno:</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6"> 
+                                <label>G&eacute;nero: </label><br>
+                                <input id="rbtnHombre" name="rbtnGenero" type="radio" class="form-check-input"/>
+                                <label for="rbtnHombre" class="form-check-label">Hombre</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="rbtnMujer" name="rbtnGenero" type="radio" class="form-check-input"/>
+                                <label for="rbtnMujer" class="form-check-label">Mujer</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="rbtnOtro" name="rbtnGenero" type="radio" class="form-check-input"/> 
+                                <label for="rbtnOtro" class="form-check-label">Otro</label>                                
+                            </div>
+                            <div class="col-6">                                
+                                <label>Estatus: </label><br>
+                                <input id="rbtnActivo" name="rbtnEstatus" type="radio" class="form-check-input"/>
+                                <label for="rbtnActivo">Activo</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <input id="rbtnInactivo" name="rbtnEstatus" type="radio" class="form-check-input"/>
+                                <label for="rbtnInactivo">Inactivo</label>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="form-floating">
-                                <input id="txtPrecioVenta" type="text" class="form-control" placeholder="Precio de Venta del Accesorio"/>
-                                <label for="txtPrecioVenta" >Precio de Venta:</label>
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6">                            
+                                <div class="form-floating">
+                                    <input id="txtNumeroUnicoCliente" type="text" class="form-control" placeholder="Numero Unico"/>
+                                    <label for="txtNumeroUnicoCliente">N&uacute;mero &Uacute;nico Cliente:</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtRFC" type="text" class="form-control" placeholder="RFC del Cliente"/>
+                                    <label for="txtRFC">RFC:</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-6">                            
+                                <div class="form-floating">
+                                    <input id="txtTelefonoCasa" type="text" class="form-control" placeholder="Telefono de Casa"/>
+                                    <label for="txtTelefonoCasa">Tel&eacute;fono de Casa:</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtTelefonoMovil" type="text" class="form-control" placeholder="Telefono Movil"/>
+                                    <label for="txtTelefonoMovil">Tel&eacute;fono M&oacute;vil:</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-12">                            
+                                <div class="form-floating">
+                                    <input id="txtCorreoElectronico" type="text" class="form-control" placeholder="Correo Electronico"/>
+                                    <label for="txtCorreoElectronico">Correo Electronico:</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="form-floating">
-                                <input id="txtExistencias" type="text" class="form-control" placeholder="Accesorios en Stock"/>
-                                <label for="txtExistencias">Existencias:</label>
-                            </div>
+                        <div class="my-3 text-center">
+                            <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
+                            <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
+                            <button class="btn btn-success"><i class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
                         </div>
-                    </div>
-                    <div class="my-3 text-center">
-                        <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
-                        <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
-                        <button class="btn btn-success"><i class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
     <div id="divCatalogo" class="col-6">
         <div class="card">
@@ -85,15 +131,23 @@
                 Listado de Accesorios
             </div>
             <div class="card-body">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="estatus">
+                    <label class="form-check-label" for="estatus">Inactivo/Activo</label>
+                </div>
                 <table id="tblAccesorios" class="table table-hover table-responsive card-group">
                     <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>Marca</th>
-                            <th>Precio Compra</th>
-                            <th>Precio Venta</th>
-                            <th>Existencias</th>
-                            <th></th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>G&eacute;nero</th>
+                            <th>Estatus</th>
+                            <th>N&uacute;mero &Uacute;nico</th>
+                            <th>RFC</th>
+                            <th>Tel&eacute;fono Casa</th>
+                            <th>Tel&eacute;fono M&oacute;vil</th>
+                            <th>Correo Electronico</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyClientes"></tbody>
