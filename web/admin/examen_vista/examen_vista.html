@@ -13,190 +13,29 @@
                 <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
                 <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n de Examen de la vista</span>
                 <span style="margin-left: 16px;">
-                    <button class="btn btn-sm btn-outline-light my-2" >
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarAgregarExamen();" >
                         <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
                     </button>
                 </span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarReporteExamen();" >
+                        <i class="fas fa-book"></i>&nbsp;&nbsp;Reporte
+                    </button>
+                </span>
             </span>
-            <span class="float-end"><a class="optica_closable_action" href="#"></a>
-            </span>
+            
         </div>
     </div>
     <div class="col-3">
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="b&uacute;squeda" aria-label="Busqueda" style="width: 180px;">
-            <button class="btn btn-outline-success" type="submit" style="background-color: #04272E; color: white">Buscar <i class="fas fa-search"></i></button>
+            <button class="btn btn-outline-success" type="button" style="background-color: #04272E; color: white" onclick="cargarBuscarExamen();">Buscar <i class="fas fa-search"></i></button>
         </form>
     </div>
 </div>
-<div class="row mt-2">
-    <div class="col-12 col-md-5 col-lg-7">
-        <div class="card">
-            <div class="card-header card-hform">
-                Detalles de Examen de vista
-            </div>
-            <div class="card-body">
-                <div class="form">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="dateFecha" type="datetime-local" class="form-control" placeholder="Fecha de Examen">
-                                <label for="dateFecha" >Fecha de Examen:</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtClienteExamen" type="text" class="form-control" placeholder="N&uacute;mero de Cliente">
-                                <label for="txtClienteExamen">N&uacute;mero &Uacute;nico de Cliente:</label>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="row mt-2">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-header text-light bg-gradient" style="background-color: #2a5f6a">
-                                    Datos Nueva Graduaci&oacute;n
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="card">
-                                                <div class="card-header text-white" style="background-color: #2a5f6a;">
-                                                    Izquierdo
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtEsferaI" type="text" class="form-control" placeholder="Esfera">
-                                                                <label for="txtEsferaI">Esfera Izq:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtCiliI" type="text" class="form-control" placeholder="Cilindro">
-                                                                <label for="txtCiliI">Cilindro Izq:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtEjeI" type="text" class="form-control" placeholder="Eje">
-                                                                <label for="txtEjeI">Eje Izq:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtDIPI" type="text" class="form-control" placeholder="DIP">
-                                                                <label for="txtDIPI">DIP Izq:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtAdiI" type="text" class="form-control" placeholder="Adicion">
-                                                                <label for="txtAdiI">Adici&oacute;n Izq:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="card">
-                                                <div class="card-header text-white" style="background-color: #2a5f6a;">
-                                                    Derecho
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtEsferaD" type="text" class="form-control" placeholder="Esfera">
-                                                                <label for="txtEsferaD">Esfera Der:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtCiliD" type="text" class="form-control" placeholder="Cilindro">
-                                                                <label for="txtCiliD">Cilindro Der:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtEjeD" type="text" class="form-control" placeholder="Eje">
-                                                                <label for="txtEjeD">Eje Der:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtDIPD" type="text" class="form-control" placeholder="DIP">
-                                                                <label for="txtDIPD">DIP Der:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="form-floating" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                                                <input id="txtAdiD" type="text" class="form-control" placeholder="Adicion">
-                                                                <label for="txtAdiD">Adici&oacute;n Der:</label>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-1">
-                                        <div class="col-12">
-                                            <textarea id="txtObs" placeholder="Observaciones"></textarea>
-                                            <label for="txtObs"></label>                                                               
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="my-3 text-center">
-                            <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
-                            <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
-                            <button class="btn btn-success"><i class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-5 col-lg-5">
-        <div class="card">
-            <div class="card-header card-hform">
-                Listado de Ex&aacute;menes de Vista
-            </div>
-            <div class="card-body">
-                <table id="tblAccesorios" class="table table-hover table-responsive card-group">
-                    <thead>
-                        <tr>
-                            <th>N&uacute;mero Unico Cliente</th>
-                            <th>Nombre Cliente</th>
-                            <th>Fecha y Hora registro</th>
-                            <th>Venta Asociada</th>                                                    
-                        </tr>
-                    </thead>
-                    <tbody id="tbodyClientes"></tbody>
-                </table>
-            </div>
-        </div>
+
+<div class="row">
+    <div id="contenedor_examen" class="p-2 justify-content-center">
+
     </div>
 </div>

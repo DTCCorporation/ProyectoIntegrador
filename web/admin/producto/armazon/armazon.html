@@ -14,161 +14,28 @@
                 <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
                 <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n de Armazones</span>
                 <span style="margin-left: 16px;">
-                    <button class="btn btn-sm btn-outline-light my-2" >
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarAgregArarmazon();" >
                         <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
                     </button>
                 </span>
-            </span>
-            <span class="float-end"><a class="optica_closable_action" href="#"></a>
-            </span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarReporteArmazon();" >
+                        <i class="fas fa-book"></i>&nbsp;&nbsp;Reporte
+                    </button>
+                </span>
+            </span>            
         </div>
     </div>
     <div class="col-3">
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="b&uacute;squeda" aria-label="Busqueda" style="width: 180px;">
-            <button class="btn btn-outline-success" type="submit" style="background-color: #04272E; color: white">Buscar <i class="fas fa-search"></i></button>
+            <button class="btn btn-outline-success" type="button" style="background-color: #04272E; color: white" onclick="cargarBuscarArmazon();">Buscar <i class="fas fa-search"></i></button>
         </form>
     </div>
 </div>
-<div class="row mt-2">
-    <div id="divDetalle" class="col-7">
-        <div class="card">
-            <div class="card-header card-hform">
-                Detalles del Armazon                
-            </div>
-            <div class="card-body">
-                <div class="form">
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="txtCodigo" class="form-label">C&oacute;digo del Producto</label>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <input id="txtCodigoAccesorio" type="text" class="form-control" readonly/>
-                                        </div>
-                                        <div class="col-6">
-                                            <input id="txtCodigoProducto" type="text" class="form-control" readonly/>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="row mt-2" style="display: none;">
-                                <div class="col-12">
-                                    <input id="txtNumeroUnico" type="text" class="form-control" readonly/>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-                    <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
-                        <div class="col-6">                            
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtNombre" type="text" class="form-control" placeholder="Nombre del Acesorio"/>
-                                <label for="txtNombre">Nombre:</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtMarca" type="text" class="form-control" placeholder="Marca del Accesorio"/>
-                                <label for="txtMarca">Marca:</label>
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="row mt-1" style="padding-top: 3px;">
-                        <div class="col-4">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtModelo" type="text" class="form-control" placeholder="Modelo">
-                                <label for="txtModelo">Modelo:</label>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="colorAccesorio" type="color" class="form-control" placeholder="Color">
-                                <label for="colorAccesorio">Color:</label>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-floating bg-gradient
-                                 " style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <textarea id="txtDescripcion" class="form-control" placeholder="Descripci&oacute;n:"></textarea>
-                                <label for="txtDescripcion">Descripci&oacute;n</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-2" style="padding-top: 3px;">
-                        <div class="col-6">                                                                                     
-                            <label for="imgAcc" class="form-label">Imagen:</label> 
-                            <input class="form-control" type="file" id="imgAcc">                                                       
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtDimensiones" type="text" class="form-control" placeholder="Dimensiones">
-                                <label for="txtDimensiones">Dimensiones:</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-12">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtCodigoBarras" type="text" class="form-control" placeholder="Código de Barras">
-                                <label for="txtCodigoBarras">C&oacute;digo de Barras:</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
-                        <div class="col-4">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtPrecioCompra" type="text" class="form-control" placeholder="Precio de Compra del Accesorio"/>
-                                <label for="txtPrecioCompra" >Precio de Compra:</label>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtPrecioVenta" type="text" class="form-control" placeholder="Precio de Venta del Accesorio"/>
-                                <label for="txtPrecioVenta" >Precio de Venta:</label>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
-                                <input id="txtExistencias" type="text" class="form-control" placeholder="Accesorios en Stock"/>
-                                <label for="txtExistencias">Existencias:</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3 text-center">
-                        <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
-                        <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
-                        <button class="btn btn-success"><i class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="divCatalogo" class="col-5 mt-2 mt-md-2 mt-lg-0">
-        <div class="card">
-            <div class="card-header card-hform">
-                Listado de Armazones
-            </div>
-            <div class="card-body">
-                <table id="tblAccesorios" class="table table-hover table-responsive card-group">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Color</th>
-                            <th>Descripci&oacute;n</th>
-                            <th>C&oacute;digo Barras</th>
-                            <th>Precio Compra</th>
-                            <th>Precio Venta</th>
-                            <th>Existencias</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbodyClientes"></tbody>
-                </table>
-            </div>
-        </div>
+<div class="row justify-content-center">
+    <div id="contenedor_armazon" class="p-2">
+
     </div>
 </div>
