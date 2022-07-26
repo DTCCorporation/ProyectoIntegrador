@@ -64,6 +64,17 @@ function cargarModuloVenta()
                    });
 }
 
+function cargarModuloTratamiento()
+{
+    fetch('tratamientos/tratamientos.html')
+    .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
+
 function mandarConfirmacionCambios()
 {
     alert("Los cambios se guardaron correctamente");
