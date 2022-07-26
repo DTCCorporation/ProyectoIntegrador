@@ -38,20 +38,6 @@
                         <img src="src" alt=""/>
                         Clientes
                     </a>
-                    <a class="nav-link optica_menu_item" href="#" onclick="cargarModuloExamenVista();">
-                        <img src="src" alt=""/>
-                        Examen de la vista
-                    </a>
-                    <div class="dropdown">
-                        <a id="dropDownMenuProductos" class="nav-link dropdown-toggle producto_item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="src" alt=""/>
-                            Presupuesto
-                        </a>
-                        <ul class="dropdown-menu producto_item_menu" aria-labelledby="dropDownMenuProductos">
-                            <li><a class="dropdown-item" href="#">Lentes de Contacto</a></li>
-                            <li><a class="dropdown-item" href="#">Mica</a></li>
-                        </ul>
-                    </div>
                     <div class="dropdown">
                         <a id="dropDownMenuProductos" class="nav-link dropdown-toggle producto_item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="src" alt=""/>
@@ -64,10 +50,17 @@
                             <li><a class="dropdown-item" href="#">Soluciones</a></li>
                         </ul>
                     </div>
-                    <a class="nav-link optica_menu_item" href="#">
-                        <img src="src" alt=""/>
-                        Tratamientos
-                    </a>
+                    <div class="dropdown">
+                        <a id="dropDownMenuProductos" class="nav-link dropdown-toggle producto_item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="src" alt=""/>
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu producto_item_menu" aria-labelledby="dropDownMenuProductos">
+                            <li><a class="dropdown-item" href="#" onclick="cargarModuloExamenVista();">Examen de la vista</a></li>
+                            <li><a class="dropdown-item" href="#">Tratamientos</a></li>
+                            <li><a class="dropdown-item" href="#">Presupuesto</a></li>
+                        </ul>
+                    </div>
                     <a class="nav-link optica_menu_item" href="#">
                         <img src="src" alt=""/>
                         Material
