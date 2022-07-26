@@ -1,41 +1,5 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item active ms-4 text-dark" aria-current="page">
-            <a class="migas" href="index.html">Home /</a>
-            <a class="migas" href="#">Productos /</a>
-            <a class="migas" href="#" onclick="cargarModuloAccesorio();">Accesorio /</a>
-        </li>
-    </ol>
-</nav>
-<div class="row">
-    <div class="col-9">
-        <div class="card-header bg-gradient" style="background-color: #04272E;padding-top: 0px; padding-bottom: 0px;">
-            <span>
-                <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
-                <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n de Accesorios</span>
-                <span style="margin-left: 16px;">
-                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarAgregarAccesorio();" >
-                        <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
-                    </button>
-                </span>
-                <span style="margin-left: 16px;">
-                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarReporteAccesorio();" >
-                        <i class="fas fa-book"></i>&nbsp;&nbsp;Reporte
-                    </button>
-                </span>
-            </span>            
-        </div>
-    </div>
-    <div class="col-3">
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="b&uacute;squeda" aria-label="Busqueda" style="width: 180px;">
-            <button class="btn btn-outline-success" type="button" style="background-color: #04272E; color: white" onclick="cargarBuscarAccesorio();" >Buscar <i class="fas fa-search"></i></button>
-        </form>
-    </div>
-</div>
-
 <div class="row mt-2">
-    <div id="divDetalle" class="col-6">
+    <div id="divDetalle" class="col-10">
         <div class="card">
             <div class="card-header text-white card-hform ">
                 Detalles del Accesorio                
@@ -101,32 +65,9 @@
                     </div>
                     <div class="my-3 text-center">
                         <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
-                        <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>
-                        <button class="btn btn-success"><i class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
+                        <button class="btn btn-danger mx-3"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>                        
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="divCatalogo" class="col-6">
-        <div class="card">
-            <div class="card-header card-hform">
-                Listado de Accesorios
-            </div>
-            <div class="card-body">
-                <table id="tblAccesorios" class="table table-hover table-responsive card-group">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Marca</th>
-                            <th>Precio Compra</th>
-                            <th>Precio Venta</th>
-                            <th>Existencias</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbodyClientes"></tbody>
-                </table>
             </div>
         </div>
     </div>

@@ -63,3 +63,8 @@ function cargarModuloVenta()
                     document.getElementById('contenedor_principal').innerHTML=datos;
                    });
 }
+
+function mandarConfirmacionCambios()
+{
+    alert("Los cambios se guardaron correctamente");
+}
