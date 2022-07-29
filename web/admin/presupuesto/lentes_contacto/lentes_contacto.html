@@ -1,15 +1,41 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active ms-4 text-dark" aria-current="page">
+            <a class="migas" href="index.html">Home /</a>
+            <a class="migas" href="#" onclick="cargarModuloPresupuestoLentesContacto();">Presupuesto Lentes de Contacto/</a>            
+        </li>
+    </ol>
+</nav>
+<div class="row">
+    <div class="col-9">
+        <div class="card-header bg-gradient" style="background-color: #04272E;padding-top: 0px; padding-bottom: 0px;">
+            <span>
+                <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
+                <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n Presupuesto Lentes de Contacto </span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarAgregarLentesContacto();" >
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
+                    </button>
+                </span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarReporteLentesContacto();" >
+                        <i class="fas fa-book"></i>&nbsp;&nbsp;Reporte
+                    </button>
+                </span>
+            </span>
+            
+        </div>
+    </div>
+    <div class="col-3">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="b&uacute;squeda" aria-label="Busqueda" style="width: 180px;">
+            <button class="btn btn-outline-success" type="button" style="background-color: #04272E; color: white" onclick="cargarBuscarLentesContacto();">Buscar <i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div id="contenedor_examen" class="p-2 justify-content-center">
+
+    </div>
+</div>

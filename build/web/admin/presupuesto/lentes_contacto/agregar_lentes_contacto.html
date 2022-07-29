@@ -1,0 +1,99 @@
+<div class="row mt-2">
+    <div id="divDetalle" class="col-10">
+        <div class="card">
+            <div class="card-header text-white card-hform ">
+                Detalles Presupuesto             
+            </div>
+            <div class="card-body">
+                <div class="form">
+                    <div class="row">                        
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">                        
+                            <div class="col-3">                                
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #34383c; border-radius: 5px;">
+                                    <input id="txtClaveUnicaPresupuesto" type="text" class="form-control"/>
+                                    <label for="txtClaveUnicaPresupuesto">Clave &Uacute;nica Presupuesto:</label>
+                                </div>                        
+                            </div>
+                            <div class="col-3">
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="dateFecha" type="datetime-local" class="form-control" placeholder="Fecha del Presupuesto">
+                                    <label for="dateFecha" >Fecha del Presupuesto:</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtNumeroUnicoEmpleado" type="text" class="form-control" placeholder="Numero Unico"/>
+                                    <label for="txtNumeroUnicoEmpleado">N&uacute;mero &Uacute;nico Empleado:</label>
+                                </div>
+                            </div>
+                            <div class="col-3">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtExamenVista" type="text" class="form-control" placeholder="Examen Vista"/>
+                                    <label for="txtExamenVista">Examen de la vista:</label>
+                                </div>                       
+                            </div>
+
+                        </div>
+
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
+                            <div class="col-3">
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>Tipo de Mica</option>
+                                        <option value="M">Monofocal</option>
+                                        <option value="P">Progresivo</option>
+                                        <option value="B">Bifocal</option>
+                                    </select>
+                                </div>                        
+                            </div>
+                            <div class="col-3 dropdown show">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>Material</option>
+                                        <option value="Cris">Cristal</option>
+                                        <option value="Cr">Cr</option>
+                                        <option value="Poli">Policarbonato</option>
+                                        <option value="Pola">Polarizado</option>
+                                    </select>
+
+                                </div>                        
+                            </div>
+
+                            <div class="col-3">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>Tratamiento Aplicado</option>
+                                        <option value="Cris">Antirreflejante b&aacute;sico</option>
+                                        <option value="Cr">Blue free</option>
+                                        <option value="Poli">Fotocrom&aacute;tico</option>
+                                        <option value="Pola">Entintado</option>
+                                    </select>
+                                </div>                        
+                            </div>
+                            <div class="col-3">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtTratamientos" type="text" class="form-control" placeholder="Tratamientos"/>
+                                    <label for="txtTratamientos">Armazon:</label>
+                                </div>                        
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding-top: 8px; padding-bottom: 16px;">
+                            <div class="col-6">                            
+                                <div class="form-floating bg-gradient" style="padding-left: 6px; background-color: #04272E; border-radius: 5px;">
+                                    <input id="txtTotalPresupuesto" type="text" class="form-control" placeholder="Total Presupuesto"/>
+                                    <label for="txtTotalPresupuesto">Total Presupuesto:</label>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="my-3 text-center">
+                            <button class="btn btn-success" onclick="generarClaveUnicaVenta();">Generar Clave</button>&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;Guardar y Notificar</button>
+                            <button class="btn btn-success" onclick="cargarAgregarVenta();"><i class="fas fa-file"></i>&nbsp;Nuevo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>

@@ -79,3 +79,16 @@ function mandarConfirmacionCambios()
 {
     alert("Los cambios se guardaron correctamente");
 }
+
+
+
+function cargarModuloPresupuestoLentesContacto() 
+{
+    fetch('presupuesto/lentes_contacto/lentes_contacto.html')
+     .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
