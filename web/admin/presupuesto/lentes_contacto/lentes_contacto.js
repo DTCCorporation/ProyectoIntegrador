@@ -30,3 +30,8 @@ function cargarReporteLentesContacto()
                     document.getElementById('contenedor_examen').innerHTML=datos;
                    });   
 }
+
+function mandarConfirmacionLentesContacto()
+{
+    alert("Se guardo y Notifico Correctamente");
+}

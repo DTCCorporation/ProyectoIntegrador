@@ -1,0 +1,45 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active ms-4 text-dark" aria-current="page">
+            <a class="migas" href="index.html">Home /</a>
+            <a class="migas" href="#" onclick="cargarModuloCompras();">Compras /</a>
+        </li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col">
+        <div class="card-header bg-gradient" style="background-color: #04272E;padding-top: 0px; padding-bottom: 0px;">
+            <span>
+                <img alt="" style="height: 24px;" src="../img/svg/package.svg"/>
+                <span class="h5 text-white">M&oacute;dulo de Gesti&oacute;n Compras</span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarAgregarCompra();" >
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar Nuevo
+                    </button>
+                </span>
+                <span style="margin-left: 16px;">
+                    <button class="btn btn-sm btn-outline-light my-2" onclick="cargarReporteCompras();">
+                        <i class="fas fa-book"></i>&nbsp;&nbsp;Reporte
+                    </button>
+                </span>
+            </span>
+            <span class="float-end"><a class="optica_closable_action" href="#"></a>
+            </span>
+        </div>
+    </div>
+    <div class="col-3">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="b&uacute;squeda" aria-label="Busqueda" style="width: 180px;">
+            <button class="btn btn-outline-success" type="button" style="background-color: #04272E; color: white" onclick="cargarBusquedaCompras();">
+                Buscar <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div id="contenedor_venta" class="col">
+
+    </div>
+</div>

@@ -92,3 +92,14 @@ function cargarModuloPresupuestoLentesContacto()
                     document.getElementById('contenedor_principal').innerHTML=datos;
                    });
 }
+
+function cargarModuloCompras()
+{
+    fetch('compras/compras.html')
+    .then(respuesta => {
+                         return respuesta.text();
+                        })
+    .then(datos => {
+                    document.getElementById('contenedor_principal').innerHTML=datos;
+                   });
+}
